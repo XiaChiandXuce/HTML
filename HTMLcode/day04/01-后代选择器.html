@@ -6,9 +6,19 @@
     <title>后代选择器</title>
     <style>
         /* div里面的 span 文字颜色是红色 */
+        /* 后代选择器，选中所有后代，包括儿子，孙子，重孙子... */
+        div span {
+            color: red;
+        }
     </style>
 </head>
 <body>
-    
+    <span>span 标签</span>
+    <div>
+        <span>这是div 的儿子 span</span>
+        <p>
+            <span>孙子 span</span>
+        </p>
+    </div>
 </body>
 </html>

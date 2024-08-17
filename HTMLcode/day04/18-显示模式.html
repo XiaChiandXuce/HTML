@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <style>
+        /* 块级：独占一行：默认宽度是父级100% */
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .div1 {
+            background-color: brown;
+        }
+
+        .div2 {
+            background-color: orange;
+        }
+        /* 行内：一行共存多个，尺寸有内容撑开,如果加宽高不生效 */
+        span {
+            width: 200px;
+            height: 200px;
+        }
+
+        .span1 {
+            background-color: brown;
+        }
+
+        .span2 {
+            background-color: orange;
+        }
+
+        /* 行内块：一行共存多个：默认尺寸内容撑开 */
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块元素 -->
+    <div class="div1">div 标签1</div>
+    <div class="div2">div 标签2</div>
+    
+    <!-- 行内元素 -->
+    <span class="span1">span1</span>
+    <span class="span2">span2</span>
+
+    <!-- 行内块模式 -->
+    <img src="./images/1.png" alt="">
+    <img src="./images/1.png" alt="">
+
+    
+</body>
+</html>
